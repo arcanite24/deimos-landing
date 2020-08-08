@@ -1,6 +1,6 @@
 // Base Colors
 $deimos-bg: #081a33;
-$deimos-bg-alt: #5bdd78;
+$deimos-bg-alt: #3de684;
 
 $deimos-primary: #ff845e;
 $deimos-primary-dark: #bd6d54;
@@ -8,53 +8,15 @@ $deimos-primary-dark: #bd6d54;
 $deimos-secondary: #dddada;
 $deimos-secondary-dark: #a6a6a6;
 
+$deimos-blue: #68d7fa;
+
 // Helpers
 $deimos-border-color-primary: #969595;
-
-// Classes
-.c-primary {
-	color: $deimos-primary;
-}
-
-.c-secondary {
-	color: $deimos-secondary;
-}
-
-.c-bg-alt {
-	color: $deimos-bg-alt;
-}
-
-.bg-d-alt {
-	background-color: $deimos-bg-alt;
-}
-
-.d-rotate-90-wrapper {
-	display: block;
-	position: relative;
-	top: 0;
-	right: 0;
-}
-
-.d-rotate-90 {
-	position: absolute;
-	top: 30vh;
-	right: 0;
-
-	/* Border is the new background */
-	background: none;
-
-	/* Rotate from top left corner (not default) */
-	transform-origin: top right;
-	transform: rotate(90deg);
-}
-
-.img-white-shadow {
-	box-shadow: -25px -25px rgba(30, 52, 83, 0.4);
-}
 
 :export {
 	deimosBg: $deimos-bg;
 	deimosBgAlt: $deimos-bg-alt;
 	deimosPrimary: $deimos-primary;
 	deimosSecondary: $deimos-secondary;
+	deimosBlue: $deimos-blue;
 }
