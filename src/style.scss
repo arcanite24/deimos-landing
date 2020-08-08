@@ -87,3 +87,7 @@ body {
 .img-white-shadow {
 	box-shadow: -25px -25px rgba(30, 52, 83, 0.4);
 }
+
+.img-filtered {
+	filter: brightness(90%) contrast(125%) grayscale(70%) saturate(40%);
+}

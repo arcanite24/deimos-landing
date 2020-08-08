@@ -41,7 +41,7 @@ export default function WebSection() {
 					Desarrollo de plataformas web, sistemas de gestión,
 					ecommerce e ideas innovativas hechas realidad
 				</div>
-				<div className='cursor-pointer c-blue font-normal'>
+				<div className='cursor-pointer c-blue font-normal mt-5'>
 					Cotizar proyecto{' '}
 					<FontAwesomeIcon
 						icon='arrow-right'

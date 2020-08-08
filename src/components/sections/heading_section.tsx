@@ -19,6 +19,7 @@ export default function HeadingSection() {
 	return (
 		<div className='flex flex-row justify-around my-10'>
 			<Img
+				className='img-filtered'
 				fluid={{ ...data.file.childImageSharp.fluid, aspectRatio: 1 }}
 				style={{ width: '90vh' }}
 			/>

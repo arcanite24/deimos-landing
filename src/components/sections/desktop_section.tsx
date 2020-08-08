@@ -2,13 +2,12 @@ import React from 'react';
 // tslint:disable-next-line: no-submodule-imports
 import Img from 'gatsby-image/withIEPolyfill';
 import { useStaticQuery, graphql } from 'gatsby';
-import style from '../../style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function MobileSection() {
+export default function DesktopSection() {
 	const data = useStaticQuery(graphql`
 		query {
-			file(relativePath: { eq: "Deimos-Forum-Beautyshot-Green.png" }) {
+			file(relativePath: { eq: "Deimos-Forum-Beautyshot.png" }) {
 				childImageSharp {
 					fluid(maxWidth: 1000, quality: 75) {
 						...GatsbyImageSharpFluid
@@ -25,13 +24,8 @@ export default function MobileSection() {
 					obtengas un producto de la mejor calidad en el menor tiempo
 					posible
 				</div>
-				<div className='cursor-pointer c-bg-alt font-normal mt-5'>
-					<FontAwesomeIcon
-						icon='arrow-left'
-						color={style.deimosBgAlt}
-						style={{ color: style.deimosBgAlt }}
-					/>{' '}
-					Cotizar proyecto
+				<div className='cursor-pointer font-normal mt-5'>
+					<FontAwesomeIcon icon='arrow-left' /> Cotizar proyecto
 				</div>
 			</div>
 			<Img
@@ -41,12 +35,10 @@ export default function MobileSection() {
 					...data.file.childImageSharp.fluid,
 					aspectRatio: 1,
 				}}
-				style={{ width: '70vh', backgroundColor: style.deimosBgAlt }}
+				style={{ width: '70vh', backgroundColor: 'white' }}
 			/>
 			<div className='d-rotate-90-wrapper w-20 uppercase'>
-				<div className='c-bg-alt text-6xl font-thin d-rotate-90'>
-					Mobile
-				</div>
+				<div className='text-6xl font-thin d-rotate-90'>Desktop</div>
 			</div>
 		</div>
 	);
