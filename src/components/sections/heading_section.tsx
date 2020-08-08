@@ -35,11 +35,11 @@ export default function HeadingSection() {
 				<hr />
 				<div className='flex-grow' />
 				<div className='font-thin'>
-					Send an email. Request a meeting and get your dreams built
-					in no time
+					Envía un email. Solicita una reunión y ten tus sueños
+					construidos de inmediato
 				</div>
 				<div className='cursor-pointer c-primary font-normal'>
-					Start a project{' '}
+					Cotizar proyecto{' '}
 					<FontAwesomeIcon
 						icon='arrow-right'
 						color={styles.deimosPrimary}

@@ -20,9 +20,41 @@ $deimos-border-color-primary: #969595;
 	color: $deimos-secondary;
 }
 
+.c-bg-alt {
+	color: $deimos-bg-alt;
+}
+
+.bg-d-alt {
+	background-color: $deimos-bg-alt;
+}
+
+.d-rotate-90-wrapper {
+	display: block;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+.d-rotate-90 {
+	position: absolute;
+	top: 30vh;
+	right: 0;
+
+	/* Border is the new background */
+	background: none;
+
+	/* Rotate from top left corner (not default) */
+	transform-origin: top right;
+	transform: rotate(90deg);
+}
+
+.img-white-shadow {
+	box-shadow: -25px -25px rgba(30, 52, 83, 0.4);
+}
+
 :export {
 	deimosBg: $deimos-bg;
-	deimosBg-alt: $deimos-bg-alt;
+	deimosBgAlt: $deimos-bg-alt;
 	deimosPrimary: $deimos-primary;
 	deimosSecondary: $deimos-secondary;
 }

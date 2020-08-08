@@ -1,6 +1,6 @@
 import './src/style.scss';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faArrowRight);
+library.add(faArrowRight, faArrowLeft);
