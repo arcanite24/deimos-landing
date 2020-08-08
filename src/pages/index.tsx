@@ -8,7 +8,7 @@ import DesktopSection from '../components/sections/desktop_section';
 export default function index() {
 	return (
 		<div className='px-16 py-5'>
-			{/* <Navbar /> */}
+			<Navbar />
 			<HeadingSection />
 			<MobileSection />
 			<WebSection />

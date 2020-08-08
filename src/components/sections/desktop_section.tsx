@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function DesktopSection() {
 	const data = useStaticQuery(graphql`
 		query {
-			file(relativePath: { eq: "Deimos-Forum-Beautyshot.png" }) {
+			file(relativePath: { eq: "black.png" }) {
 				childImageSharp {
 					fluid(maxWidth: 1000, quality: 75) {
 						...GatsbyImageSharpFluid
