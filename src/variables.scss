@@ -13,5 +13,16 @@ $deimos-border-color-primary: #969595;
 
 // Classes
 .c-primary {
-  color: $deimos-primary;
+	color: $deimos-primary;
+}
+
+.c-secondary {
+	color: $deimos-secondary;
+}
+
+:export {
+	deimosBg: $deimos-bg;
+	deimosBg-alt: $deimos-bg-alt;
+	deimosPrimary: $deimos-primary;
+	deimosSecondary: $deimos-secondary;
 }
