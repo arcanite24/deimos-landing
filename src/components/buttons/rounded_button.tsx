@@ -1,4 +1,4 @@
-import style from '../../style.scss';
+import style from '../../variables.module.scss';
 
 import React, { Component } from 'react';
 

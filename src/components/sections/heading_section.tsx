@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from '../../variables.scss';
+import styles from '../../variables.module.scss';
 
 export default function HeadingSection() {
 	const data = useStaticQuery(graphql`

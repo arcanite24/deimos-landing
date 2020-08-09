@@ -3,7 +3,7 @@ import React from 'react';
 import Img from 'gatsby-image/withIEPolyfill';
 import { useStaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import style from '../../style.scss';
+import style from '../../variables.module.scss';
 
 export default function WebSection() {
 	const data = useStaticQuery(graphql`

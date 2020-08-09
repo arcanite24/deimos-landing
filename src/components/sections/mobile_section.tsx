@@ -2,7 +2,7 @@ import React from 'react';
 // tslint:disable-next-line: no-submodule-imports
 import Img from 'gatsby-image/withIEPolyfill';
 import { useStaticQuery, graphql } from 'gatsby';
-import style from '../../style.scss';
+import style from '../../variables.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function MobileSection() {
