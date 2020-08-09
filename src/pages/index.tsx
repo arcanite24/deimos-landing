@@ -9,8 +9,8 @@ import SEO from '../components/seo';
 export default function index() {
 	return (
 		<SEO>
-			<div className='px-16 py-5'>
-				<Navbar />
+			<Navbar />
+			<div className='p-6 lg:px-16 lg:pb-5'>
 				<HeadingSection />
 				<MobileSection />
 				<WebSection />

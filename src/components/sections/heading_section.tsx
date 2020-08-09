@@ -17,27 +17,26 @@ export default function HeadingSection() {
 		}
 	`);
 	return (
-		<div className='flex flex-row justify-around my-10'>
+		<div className='flex flex-col lg:flex-row lg:justify-around my-10'>
 			<Img
-				className='img-filtered'
-				fluid={{ ...data.file.childImageSharp.fluid, aspectRatio: 1 }}
-				style={{ width: '90vh' }}
+				className='img-filtered w-full lg:w-7/12'
+				fluid={{
+					...data.file.childImageSharp.fluid,
+					aspectRatio: 1,
+				}}
 				alt='Idea'
 			/>
-			<div className='flex flex-col font-hairline tracking-wider uppercase my-16 pl-10'>
-				<div className='relative text-6xl' style={{ right: '150px' }}>
+			<div className='flex flex-col font-hairline tracking-wider uppercase mb-16 mt-3 lg:my-16 lg:pl-10'>
+				<div className='relative text-4xl lg:text-6xl lg:d-right'>
 					Great ideas
 				</div>
-				<div
-					className='c-primary relative overflow-visible whitespace-no-wrap text-6xl'
-					style={{ right: '150px' }}
-				>
+				<div className='c-primary relative overflow-visible whitespace-no-wrap text-4xl lg:text-6xl lg:d-right'>
 					Better future
 				</div>
 				<hr />
 				<div className='flex-grow' />
-				<div className='font-thin'>
-					Envía un email. Solicita una reunión y ten tus sueños
+				<div className='font-thin mt-2'>
+					Envía un email. Solicita una reunión y ve tus sueños
 					construidos de inmediato
 				</div>
 				<div className='cursor-pointer c-primary font-normal'>

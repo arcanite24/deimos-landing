@@ -4,9 +4,8 @@ import RoundedButton from './buttons/rounded_button';
 
 export default function Navbar() {
 	return (
-		<div className='flex flex-row items-center align-middle'>
-			<img className='w-2/12' src={logo} alt='logo' />
-			<div className='flex-grow' />
+		<div className='flex flex-row w-screen items-center justify-between align-middle pt-5 px-4 lg:px-16'>
+			<img className='w-5/12 lg:w-2/12' src={logo} alt='logo' />
 			<RoundedButton
 				text='Contáctanos'
 				onClick={() => {

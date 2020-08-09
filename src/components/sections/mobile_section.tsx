@@ -18,8 +18,8 @@ export default function MobileSection() {
 		}
 	`);
 	return (
-		<div className='flex flex-row justify-around my-16'>
-			<div className='flex flex-col justify-end text-justify font-hairline tracking-wider uppercase my-16 px-10 w-6/12'>
+		<div className='flex flex-col-reverse lg:flex-row justify-around lg:my-16'>
+			<div className='flex flex-col items-end lg:items-start justify-end text-justify font-hairline tracking-wider uppercase my-16 lg:px-10 lg:w-6/12'>
 				<div className='font-thin'>
 					Desarrollo mobile híbrido y nativo, especializado para que
 					obtengas un producto de la mejor calidad en el menor tiempo
@@ -35,17 +35,17 @@ export default function MobileSection() {
 				</div>
 			</div>
 			<Img
-				className='flex-grow img-white-shadow mx-6'
+				className='img-white-shadow mx-6 w-8/12 self-end lg:w-5/12'
 				objectFit='contain'
 				fluid={{
 					...data.file.childImageSharp.fluid,
 					aspectRatio: 1,
 				}}
-				style={{ width: '70vh', backgroundColor: style.deimosBgAlt }}
+				style={{ backgroundColor: style.deimosBgAlt }}
 				alt='Desarrollo móvil'
 			/>
 			<div className='d-rotate-90-wrapper w-20 uppercase'>
-				<div className='c-bg-alt text-6xl font-thin d-rotate-90'>
+				<div className='c-bg-alt text-5xl lg:text-6xl font-thin d-rotate-90'>
 					Mobile
 				</div>
 			</div>

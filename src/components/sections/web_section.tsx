@@ -20,23 +20,25 @@ export default function WebSection() {
 		}
 	`);
 	return (
-		<div className='flex flex-row justify-around my-16'>
-			<div className='d-rotate-270-wrapper w-20 uppercase'>
-				<div className='c-blue text-6xl font-thin d-rotate-270'>
-					Web
+		<div className='flex flex-col lg:flex-row justify-around lg:my-16'>
+			<div className='flex flex-row-reverse lg:flex-row w-full lg:w-7/12'>
+				<div className='w-20 uppercase d-rotate-270-wrapper'>
+					<div className='c-blue text-6xl font-thin d-rotate-270'>
+						Web
+					</div>
 				</div>
+				<Img
+					className='img-white-shadow mr-6 ml-10 self-end w-full'
+					objectFit='contain'
+					alt='Desarollo móvil'
+					fluid={{
+						...data.file.childImageSharp.fluid,
+						aspectRatio: 1,
+					}}
+					style={{ backgroundColor: style.deimosBlue }}
+				/>
 			</div>
-			<Img
-				className='flex-grow img-white-shadow mr-6 ml-10'
-				objectFit='contain'
-				alt='Desarollo móvil'
-				fluid={{
-					...data.file.childImageSharp.fluid,
-					aspectRatio: 1,
-				}}
-				style={{ width: '70vh', backgroundColor: style.deimosBlue }}
-			/>
-			<div className='flex flex-col justify-end text-justify font-hairline tracking-wider uppercase my-16 px-10 w-6/12'>
+			<div className='flex flex-col lg:justify-end text-justify font-hairline tracking-wider uppercase my-16 lg:px-10 lg:w-6/12'>
 				<div className='font-thin'>
 					Desarrollo de plataformas web, sistemas de gestión,
 					ecommerce e ideas innovativas hechas realidad
