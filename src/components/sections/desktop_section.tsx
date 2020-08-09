@@ -20,9 +20,10 @@ export default function DesktopSection() {
 		<div className='flex flex-col-reverse lg:flex-row justify-around lg:my-16'>
 			<div className='flex flex-col items-end lg:items-start justify-end text-justify font-hairline tracking-wider uppercase my-16 lg:px-10 lg:w-6/12'>
 				<div className='font-thin'>
-					Desarrollo mobile híbrido y nativo, especializado para que
-					obtengas un producto de la mejor calidad en el menor tiempo
-					posible
+					Desarrollo de aplicaciones de escritorio. Si las páginas web
+					no es lo que necesitas, prueba las aplicaciones de
+					escritorio. Robustos sistemas de gestión y plataformas
+					hechas a la medida de tus necesidades
 				</div>
 				<div className='cursor-pointer font-normal mt-5'>
 					<FontAwesomeIcon icon='arrow-left' /> Cotizar proyecto
