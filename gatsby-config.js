@@ -1,7 +1,15 @@
 const path = require('path');
 
 module.exports = {
-	/* Your site config here */
+	siteMetadata: {
+		title: 'Deimos Applications',
+		titleTemplate: '%s · Deimos',
+		description:
+			'Deimos Applications. Consultora de TI que proporciona las mejores soluciones en desarrollo de software',
+		url: 'https://www.deimos.app',
+		image: '/logo-bg-full.jpg',
+		twitterUsername: '@deimosApps',
+	},
 	plugins: [
 		'gatsby-plugin-typescript',
 		'gatsby-plugin-tslint',
@@ -24,5 +32,12 @@ module.exports = {
 				path: path.join(__dirname, 'assets', 'img'),
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-manifest',
+			options: {
+				icon: 'assets/img/logo_single.png',
+			},
+		},
+		'gatsby-plugin-react-helmet',
 	],
 };

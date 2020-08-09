@@ -36,6 +36,7 @@ export default function DesktopSection() {
 					aspectRatio: 1,
 				}}
 				style={{ width: '70vh', backgroundColor: 'white' }}
+				alt='Desarrollo de aplicaciones de escritorio'
 			/>
 			<div className='d-rotate-90-wrapper w-20 uppercase'>
 				<div className='text-6xl font-thin d-rotate-90'>Desktop</div>

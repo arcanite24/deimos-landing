@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 export default class RoundedButton extends Component<IRoundedButtonProps> {
 	public static defaultProps: Partial<IRoundedButtonProps> = {
 		color: style.deimosPrimary,
-		textColor: 'white',
+		textColor: 'black',
 	};
 	render() {
 		return (

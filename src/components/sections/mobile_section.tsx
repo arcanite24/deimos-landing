@@ -42,6 +42,7 @@ export default function MobileSection() {
 					aspectRatio: 1,
 				}}
 				style={{ width: '70vh', backgroundColor: style.deimosBgAlt }}
+				alt='Desarrollo móvil'
 			/>
 			<div className='d-rotate-90-wrapper w-20 uppercase'>
 				<div className='c-bg-alt text-6xl font-thin d-rotate-90'>

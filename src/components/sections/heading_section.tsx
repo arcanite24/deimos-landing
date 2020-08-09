@@ -22,6 +22,7 @@ export default function HeadingSection() {
 				className='img-filtered'
 				fluid={{ ...data.file.childImageSharp.fluid, aspectRatio: 1 }}
 				style={{ width: '90vh' }}
+				alt='Idea'
 			/>
 			<div className='flex flex-col font-hairline tracking-wider uppercase my-16 pl-10'>
 				<div className='relative text-6xl' style={{ right: '150px' }}>
