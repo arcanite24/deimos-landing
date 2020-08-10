@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '../../variables.module.scss';
 
-export default function HeadingSection() {
+export default function HeadingSection(props: IHeadingSectionProps) {
 	const data = useStaticQuery(graphql`
 		query {
 			file(relativePath: { eq: "idea.jpg" }) {
@@ -39,7 +39,10 @@ export default function HeadingSection() {
 					Envía un email. Solicita una reunión y ve tus sueños
 					construidos de inmediato
 				</div>
-				<div className='cursor-pointer c-primary font-normal'>
+				<div
+					onClick={props.onContact}
+					className='cursor-pointer c-primary font-normal'
+				>
 					Cotizar proyecto{' '}
 					<FontAwesomeIcon
 						icon='arrow-right'
@@ -50,4 +53,8 @@ export default function HeadingSection() {
 			</div>
 		</div>
 	);
+}
+
+export interface IHeadingSectionProps {
+	onContact?: () => void;
 }

@@ -9,13 +9,18 @@ import SEO from '../components/seo';
 export default function index() {
 	return (
 		<SEO>
-			<Navbar />
+			<Navbar onContact={onContact} />
 			<div className='p-6 lg:px-16 lg:pb-5'>
-				<HeadingSection />
-				<MobileSection />
-				<WebSection />
-				<DesktopSection />
+				<HeadingSection onContact={onContact} />
+				<MobileSection onContact={onContact} />
+				<WebSection onContact={onContact} />
+				<DesktopSection onContact={onContact} />
 			</div>
 		</SEO>
 	);
+}
+
+function onContact() {
+	window.location.href =
+		'mailto:hola@deimos.app?subject=Cotización de proyecto&body=Hola. Me gustaría cotizar un proyecto de TI con ustedes';
 }

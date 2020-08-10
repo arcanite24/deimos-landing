@@ -4,7 +4,7 @@ import Img from 'gatsby-image/withIEPolyfill';
 import { useStaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function DesktopSection() {
+export default function DesktopSection(props: IDesktopSectionProps) {
 	const data = useStaticQuery(graphql`
 		query {
 			file(relativePath: { eq: "black.png" }) {
@@ -25,7 +25,10 @@ export default function DesktopSection() {
 					escritorio. Robustos sistemas de gestión y plataformas
 					hechas a la medida de tus necesidades
 				</div>
-				<div className='cursor-pointer font-normal mt-5'>
+				<div
+					onClick={props.onContact}
+					className='cursor-pointer font-normal mt-5'
+				>
 					<FontAwesomeIcon icon='arrow-left' /> Cotizar proyecto
 				</div>
 			</div>
@@ -46,4 +49,8 @@ export default function DesktopSection() {
 			</div>
 		</div>
 	);
+}
+
+export interface IDesktopSectionProps {
+	onContact?: () => void;
 }

@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import style from '../../variables.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function MobileSection() {
+export default function MobileSection(props: IMobileSectionProps) {
 	const data = useStaticQuery(graphql`
 		query {
 			file(relativePath: { eq: "Deimos-Forum-Beautyshot-Green.png" }) {
@@ -25,7 +25,10 @@ export default function MobileSection() {
 					obtengas un producto de la mejor calidad en el menor tiempo
 					posible
 				</div>
-				<div className='cursor-pointer c-bg-alt font-normal mt-5'>
+				<div
+					onClick={props.onContact}
+					className='cursor-pointer c-bg-alt font-normal mt-5'
+				>
 					<FontAwesomeIcon
 						icon='arrow-left'
 						color={style.deimosBgAlt}
@@ -51,4 +54,8 @@ export default function MobileSection() {
 			</div>
 		</div>
 	);
+}
+
+export interface IMobileSectionProps {
+	onContact?: () => void;
 }

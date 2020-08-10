@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from '../../variables.module.scss';
 
-export default function WebSection() {
+export default function WebSection(props: IWebSectionProps) {
 	const data = useStaticQuery(graphql`
 		query {
 			file(
@@ -43,7 +43,10 @@ export default function WebSection() {
 					Desarrollo de plataformas web, sistemas de gestión,
 					ecommerce e ideas innovativas hechas realidad
 				</div>
-				<div className='cursor-pointer c-blue font-normal mt-5'>
+				<div
+					onClick={props.onContact}
+					className='cursor-pointer c-blue font-normal mt-5'
+				>
 					Cotizar proyecto{' '}
 					<FontAwesomeIcon
 						icon='arrow-right'
@@ -53,4 +56,8 @@ export default function WebSection() {
 			</div>
 		</div>
 	);
+}
+
+export interface IWebSectionProps {
+	onContact?: () => void;
 }
