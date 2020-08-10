@@ -6,7 +6,7 @@ module.exports = {
 		titleTemplate: '%s · Deimos',
 		description:
 			'Deimos Applications. Consultora de TI que proporciona las mejores soluciones en desarrollo de software',
-		url: 'https://www.deimos.app',
+		siteUrl: 'https://www.deimos.app',
 		image: '/logo-bg-full.jpg',
 		twitterUsername: '@deimosApps',
 	},
@@ -39,5 +39,6 @@ module.exports = {
 			},
 		},
 		'gatsby-plugin-react-helmet',
+		'gatsby-plugin-sitemap',
 	],
 };
